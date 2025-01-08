@@ -1,0 +1,69 @@
+main {
+    background: url(../images/bg-repeat.jpg);
+    background-size: 100% 100%; 
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.message {
+    width: 50%;
+    padding-right: 50px;
+}
+
+.message h1 {
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.message h2 {
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+}
+
+form {
+    width: 50%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.field {
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    resize: none;
+}
+
+form .send {
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3CCC87;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+}
+
+.border-ok {
+    border: 2px solid green;
+}
+
+.border-error {
+    border: 2px solid red;
+}
+
+.error::after {
+    content: "campo obrigatório";
+    color: red;
+    font-size: 12px;
+}
