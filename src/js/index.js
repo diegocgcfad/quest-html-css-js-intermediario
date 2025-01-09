@@ -3,10 +3,6 @@ const fields = document.querySelectorAll('.field');
 const send = document.querySelector('.send');
 const form = document.querySelector('.form');
 
-form.onsubmit = function() {
-    return false;
-}
-
 send.addEventListener('click', function() {
     fields.forEach(function(item, index){
         if(item.value == ""){
